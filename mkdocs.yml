@@ -95,6 +95,8 @@ plugins:
   - git-committers:
       repository: shenxiangzhuang/llm-glimpses
       branch: master
+      cache_dir: docs/assets/git-committers
+      token: !!python/object/apply:os.getenv [ "LLM_GLIMPSE_MKDOCS_GIT_COMMITTERS_APIKEY" ]
   - git-revision-date-localized:
       enable_creation_date: true
 
