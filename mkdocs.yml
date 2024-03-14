@@ -92,6 +92,12 @@ markdown_extensions:
   - footnotes
 
 plugins:
+  - git-committers:
+      repository: shenxiangzhuang/llm-glimpses
+      branch: master
+  - git-revision-date-localized:
+      enable_creation_date: true
+
   - search
   - bibtex:
       bib_file: "docs/references.bib"
